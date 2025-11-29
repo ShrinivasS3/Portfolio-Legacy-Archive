@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "~@flaticon/flaticon-uicons/css/all/all";
+
+@layer base {
+  body {
+    @apply dark:bg-cardsdark bg-cardslight transition-all ease-in duration-200;
+  }
+}
+
+@layer utilities {
+  .animation-delay-4000 {
+    animation-delay: 19s;
+  }
+}

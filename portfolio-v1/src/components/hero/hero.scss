@@ -1,0 +1,130 @@
+@import "../../App.scss";
+
+canvas{
+    // max-width: 100wh;
+    height: 100vh;
+    // width: 30%;
+    // height: auto;
+    // size: 130%;
+    // bottom: 25%;
+}
+.hero{
+    background-color: inherit;
+    // height: calc(100vh - 100px);
+    overflow: hidden;
+    position: relative;
+    @include mobile {
+        height: 50%;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    .name{
+        font-size:10em;
+        font-weight: bold;
+        align-items: center;
+        font-family: inherit;
+        padding-left: 50px;
+        padding-right: 50px;
+        z-index: 2;
+        @include mobile{
+            font-size: 2.5em;
+            padding-left: 20px;
+            padding-right: 20px;
+            align-items: center;
+            padding-top: 100px;
+        }
+        .fname{
+            height: 241px;
+            display: flex;
+            justify-content:left !important;
+            overflow: hidden;
+            @include mobile {
+                height:auto;
+            }
+        }
+        .lname{
+            height: 241px;
+            display: flex;
+            justify-content: right !important;
+            overflow: hidden;
+            @include mobile {
+                height:auto;
+            }
+        }
+
+    }
+    .obj{
+        height: 100vh;
+        width: auto;
+    }
+    .tdobj{
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 50px;
+        height: 100vh;
+        
+    }
+}
+.gif-container{
+    display:grid;
+    height: 85vh;
+    position: relative;
+    z-index: 1;
+    // align-items:center;
+    // top: -38%;
+    bottom: 38%;
+    .role{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        // font-size: 100px;
+        font-family: 'DM Sans', sans-serif;//change text-decoration
+        opacity: 10%;
+        position: absolute;
+        font-size: 40vh;
+        bottom: -40px;
+        white-space: nowrap;
+        // background: -webkit-linear-gradient(#000000, #333);
+        // // background-clip: content-box;
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        // color: #ffffff09;
+        width: 50%;
+        font-weight:100;
+        @include mobile {
+            font-size: 10vh;
+            bottom: 460px;
+        }
+    }
+    .macgif{
+        position: relative;
+        // align-items: center;
+        top: 22%;
+        // padding-left: 10%;
+        width: 500px;
+        height: auto;
+        @include mobile {
+            // font-size: 20px;
+            // top: auto;
+            height: 20px;
+            width: 100px;
+        }
+    }
+    .bio{
+        font-size: 32px;
+        font-weight: bold;
+    }
+}
+.slidingTextContainer {
+    position: absolute;
+    font-size: 50vh;
+    bottom: -120px;
+    white-space: nowrap;
+    color: #ffffff09;
+    width: 50%;
+    font-weight: bold;
+    z-index: 3;
+  }

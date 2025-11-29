@@ -1,0 +1,179 @@
+@import "../../../App.scss";
+
+.skicon{
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    // justify-content: center;
+    padding-left: 38px;
+    @include mobile{
+        padding-left: 0px;
+        font-size: small
+    }
+    .s1{
+        display: flex;
+        padding-left: 70px;
+        height: 40px;
+        align-items: center;
+        justify-content: space-between;
+        @include mobile{
+            padding-left: 0px;
+            height: 30px;
+        }
+        .s1-0{
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include mobile{
+                width: 50%;
+            }
+        }
+        .s1-1{
+            width: 70%;
+            display: flex;
+            align-items: center;
+            // justify-content: space-evenly;
+            @include mobile{
+                width: 100%;
+            }
+        }
+    }
+    .s2{
+        display: flex;
+        height: 40px;
+        padding-left: 70px;
+        align-items: center;
+        justify-content: space-between;
+        @include mobile{
+            padding-left: 0px;
+            height: 30px;
+        }
+        .s2-0{
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include mobile{
+                width: 50%;
+            }
+        }
+        .s2-1{
+            width: 70%;
+            display: flex;
+            align-items: center;
+            // justify-content: space-evenly;
+            @include mobile{
+                width: 100%;
+            }
+        }
+    }
+    .s3{
+        display: flex;
+        height: 40px;
+        padding-left: 70px;
+        align-items: center;
+        justify-content: space-between;
+        @include mobile{
+            padding-left: 0px;
+            height: 30px;
+        }
+        .s3-0{
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include mobile{
+                width: 50%;
+            }
+        }
+        .s3-1{
+            width: 70%;
+            display: flex;
+            align-items: center;
+            // justify-content: space-evenly;
+            @include mobile{
+                width: 100%;
+            }
+        }
+    }
+    .s4{
+        display: flex;
+        height: 40px;
+        padding-left: 70px;
+        align-items: center;
+        justify-content: space-between;
+        @include mobile{
+            padding-left: 0px;
+            height: 30px;
+        }
+        .s4-0{
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include mobile{
+                width: 50%;
+            }
+        }
+        .s4-1{
+            width: 70%;
+            display: flex;
+            align-items: center;
+            // justify-content: space-evenly;
+            @include mobile{
+                width: 100%;
+            }
+        }
+    }
+    .s5{
+        display: flex;
+        height: 40px;
+        padding-left: 70px;
+        align-items: center;
+        justify-content: space-between;
+        @include mobile{
+            padding-left: 0px;
+            height: 20px;
+        }
+        .s5-0{
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include mobile{
+                width: 50%;
+            }
+        }
+        .s5-1{
+            width: 70%;
+            display: flex;
+            align-items: center;
+            // justify-content: space-evenly;
+            @include mobile{
+                width: 100%;
+                padding-left: 2px;
+            }
+        }
+    }
+    .s1:hover{
+        background-color: #ebae1f;
+        color: #121212;
+    }
+    .s2:hover{
+        background-color: #ebae1f;
+        color: #121212;
+    }
+    .s3:hover{
+        background-color: #ebae1f;
+        color: #121212;
+    }
+    .s4:hover{
+        background-color: #ebae1f;
+        color: #121212;
+    }
+    .s5:hover{
+        background-color: #ebae1f;
+        color: #121212;
+    }
+}

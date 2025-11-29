@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@font-face {
+  font-family: "AbrilfatfaceRegular";
+  src: url('/fonts/AbrilFatface-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Raleway";
+  src: url('/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url('/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Inter";
+  src: url('/fonts/Inter-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Lora";
+  src: url('/fonts/Lora-VariableFont_wght.ttf') format('truetype');
+}

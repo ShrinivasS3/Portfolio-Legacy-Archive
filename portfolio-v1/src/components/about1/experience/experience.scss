@@ -1,0 +1,26 @@
+@import "../../../App.scss";
+
+.exp{
+    display: flex;
+    flex-direction: column;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: larger;
+    @include mobile{
+        font-size: 15px;
+    }
+    .tab{
+        display: inline;
+        margin-right: 4em;
+    }
+}
+ul{
+    font-style: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+li {
+    font-style: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}

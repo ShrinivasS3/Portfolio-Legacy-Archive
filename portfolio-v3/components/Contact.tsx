@@ -1,0 +1,108 @@
+'use client'
+
+import Link from "next/link";
+import "../components/animations/animate.css";
+import AnimatedBody from "@/components/animations/AnimatedBody";
+import AnimatedTitle from "@/components/animations/AnimatedTitle";
+import AnimatedWords from "@/components/animations/AnimatedWords";
+import { motion } from "framer-motion";
+import ContactBackground from "@/components/ui/ContactBackground";
+import React from "react";
+
+const Contact = () => {
+    return (
+        <div className="flex flex-col w-full">
+        <motion.div
+            className="relative z-10 flex flex-col h-[85vh] w-full items-center justify-center overflow-hidden py-16 md:h-[80vh] md:py-20 lg:h-[90vh] lg:pt-0 lg:pb-28 pb-10"
+            id="contact"
+            initial="initial"
+            animate="animate"
+        >
+            <ContactBackground />
+            <div className="z-20 mx-auto  flex w-[90%] flex-col items-center justify-center pt-10 md:pt-0 ">
+                <div className="absolute top-0 right-0 z-20 text-cream pr-5 pt-5 opacity-70 font-">
+                    Made in Blender
+                </div>
+                <div
+                    className={`flex flex-col items-start justify-center font-inter relative w-full sm:items-center lg:max-w-[1440px]`}
+                >
+                    <AnimatedWords
+                        title={"contact"}
+                        style={
+                            "flex max-w-[250px] flex-col items-start text-left text-7xl font-extrabold uppercase leading-[0.9em] text-cream sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center sm:text-[150px] md:text-[150px] lg:text-center lg:text-[120px] xl:text-[250px]"
+                        }
+                    />
+                </div>
+                <div className="mt-20 z-20 flex w-full flex-col items-end justify-center gap-16 sm:mt-32 sm:gap-12 md:mt-40 md:flex-row md:items-start md:justify-between lg:mt-12 lg:max-w-[1440px]">
+                    <div className=" flex z-20 w-[350px] max-w-[90%] flex-col items-end text-right text-[14px] font-semibold uppercase text-cream sm:w-[350px] sm:text-[14px] md:w-[310px] md:items-start md:text-left md:text-[16px] lg:w-[420px] lg:text-2xl">
+                        <AnimatedBody
+                            text={
+                                "Got a question, proposal, project, or want to work together on something?"
+                            }
+                            className={
+                                "-mb-1 inline-block overflow-hidden pt-1 sm:-mb-2 md:-mb-3 lg:-mb-4"
+                            }
+                        />
+                        <Link
+                            href="mailto:shrini1908@gmail.com"
+                            target="_blank"
+                            aria-label="Send me an email"
+                            className="mt-1 w-[167px] flex-1 underline underline-offset-2 hover:no-underline sm:mt-2 md:mt-3 md:w-[170px] lg:mt-4 lg:w-full hover:text-accent"
+                            >
+                            Send me an email
+                            <AnimatedBody text={"shrini1908@gmail.com"} className={"lowercase"} />
+                        </Link>
+                    </div>
+
+                    <div className="flex gap-10 text-[16px] font-bold text-cream  sm:gap-14 sm:text-[24px] md:gap-10 md:text-[16px] lg:gap-20 lg:text-[28px]">
+                        <Link
+                            href="https://github.com/ShrinivasS3"
+                            target="_blank"
+                            aria-label="View GitHub Profile"
+                        >
+                            <AnimatedTitle
+                                text={"GITHUB"}
+                                className={
+                                    "hover:text-accent text-[16px] font-bold text-cream sm:text-[20px] md:text-[16px] lg:text-[28px]"
+                                }
+                                wordSpace={"mr-[0.25em]"}
+                                charSpace={"mr-[0.01em]"}
+                            />
+                        </Link>
+                        <Link
+                            href="https://www.linkedin.com/in/shrinivassesadri/"
+                            target="_blank"
+                            aria-label="View linkedin Profile"
+                        >
+                            <AnimatedTitle
+                                text={"LINKEDIN"}
+                                className={
+                                    "hover:text-accent text-[16px] font-bold text-cream sm:text-[20px] md:text-[16px] lg:text-[28px]"
+                                }
+                                wordSpace={"mr-[0.25em]"}
+                                charSpace={"mr-[0.01em]"}
+                            />
+                        </Link>
+                        <Link
+                            href="https://shrinivassesadri.in/"
+                            target="_blank"
+                            aria-label="Profile Hub"
+                        >
+                            <AnimatedTitle
+                                text={"PROFILE HUB"}
+                                className={
+                                    "hover:text-accent text-[16px] font-bold text-cream sm:text-[20px] md:text-[16px] lg:text-[28px]"
+                                }
+                                wordSpace={"mr-[0.25em]"}
+                                charSpace={"mr-[0.01em]"}
+                            />
+                        </Link>
+                    </div>
+                </div>
+            </div>
+        </motion.div>
+        </div>
+    );
+};
+
+export default Contact;

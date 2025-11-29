@@ -1,0 +1,44 @@
+import { gridItems } from "@/data";
+import { BentoGridItem } from "./ui/bento-grid";
+import { FaStarOfLife } from "react-icons/fa6";
+import { FaStar } from 'react-icons/fa';
+import { motion } from "framer-motion";
+
+import dynamic from 'next/dynamic';
+
+const BentoGrid = dynamic(() => import('../components/ui/bento-grid').then(mod => mod.BentoGrid), {
+    ssr: false,
+});
+
+const Grid = () => {
+    return (
+        <section id="about">
+            <div className="w-full flex text-center justify-center align-middle">
+                <h1 className="text-6xl md:text-8xl font-porsha text-black z-10">
+                        About
+                    <FaStar className="inline-block lg:text-8xl lg:pb-7 pb-2 text-3xl" />
+                    <span className="font-porsha">ME</span>
+                </h1>
+            </div>
+            <BentoGrid className="w-full py-20 px-5 lg:px-0">
+                {gridItems.map((item, i) => (
+                    <BentoGridItem
+                        id={item.id}
+                        key={i}
+                        title={item.title}
+                        description={item.description}
+                        // remove icon prop
+                        // remove original classname condition
+                        className={item.className}
+                        img={item.img}
+                        imgClassName={item.imgClassName}
+                        titleClassName={item.titleClassName}
+                        spareImg={item.spareImg}
+                    />
+                ))}
+            </BentoGrid>
+        </section>
+    );
+};
+
+export default Grid;
